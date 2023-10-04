@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <ul>
         <li><a href="educador.html" style="color: black;">Introdução - Menu</a></li>
         <li><a href="bloom.html" style="color: black;">Bloom</a></li>
@@ -18,31 +19,123 @@
         <li><a href="missao.html" style="color:black;">Missão</a></li>
         <li><a href="historia.html" style="color:black;">História</a></li>
     </ul>
-    <h1>Missões</h1>
-    <label>Selecione a missão:</label>
-    <input list="missoes" name="missao" id="missao">
+    <h1>Missão</h1>
+    <form>
+        <select>
+            <option disabled selected>Selecione o nível de Bloom</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+        <select>
+            <option disabled selected>selecione o nível de força</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <select>
+            <option disabled selected>Selecione o Tipo</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select><br><br><br>
+        <select>
+            <option disabled selected>Selecionar um Verbo</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <select>
+            <option disabled selected>Selecione uma Competência</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </form><br><br>
+    <textarea id="" cols="50" rows="1" placeholder="Digite o título da missão"></textarea>
+    <h2>|Selecione as etapas da missão que deseja:</h2>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
 
-    <datalist id="missoes">
-        <option value="Encontrar Tags">
-        <option value="Encontrar Selectores">
-        <option value="encontrar Scripts">
-        <option value="encontrar Exceptions">
-        <option value="encontrar Conditions">
-        <option value="Encontrar Loops ">
-        <option value="Encontrar Functions">
-    </datalist><br><br>
+        }
 
-    <label>Selecione a Força</label>
-    <select>
-        <option disabled selected>Selecione</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-    </select><br>
-    <input type="submit" value="Prosseguir">
+        th,
+        td {
+            padding: 20px;
+            width: 150px;
+        }
+
+        .ult {
+            height: 120px;
+        }
+
+        .box {
+            width: 1rem;
+            text-align: center;
+
+        }
+    </style>
+
+
+
+    <table>
+        <tr>
+            <th>Instrução</th>
+            <th>Tipo</th>
+            <th>Ponto</th>
+            <th class="box">Selecione</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            </td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            </td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            </td>
+
+        </tr>
+        <tr class="ult">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            </td>
+
+        </tr>
+    </table><br>
+    <input type="submit" value="cadastrar">
+    <input type="submit" value="cancelar">
+
 
 
 </body>

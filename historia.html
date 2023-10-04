@@ -22,11 +22,84 @@
     <h1>História do Jogo</h1>
     <h4>Título: Planeta Alien (A Revolta do Furão)</h4>
 
-    <label>Descrição:</label><br>
-    <textarea rows="4" cols="50" id="Historia"></textarea><br>
-    <label>Objetivo:</label><br>
-    <textarea rows="4" cols="50" id="Historia"></textarea><br>
-    <input type="submit" value="Enviar">
+    <textarea rows="4" cols="50" id="Historia" placeholder="Digite a descrição"></textarea><br>
+    <textarea rows="1" cols="50" id="Historia" placeholder="Digite o título"></textarea><br>
+    <textarea rows="1" cols="50" id="Historia" placeholder="Digite o objetivo"></textarea><br>
+    <input type="submit" value="Enviar"><br><br>
+    <h3>|Selecione as missões para essa História</h3>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 20px;
+            width: 150px;
+        }
+
+        .ult {
+            height: 120px;
+        }
+
+        .box {
+            width: 1rem;
+            text-align: center;
+        }
+    </style>
+
+
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Força</th>
+            <th>Total</th>
+            <th>Selecione</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            </td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            </td>
+
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            </td>
+
+
+        </tr>
+        <tr class="ult">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            </td>
+
+
+        </tr>
+    </table><br>
+    <input type="submit" value="cadastrar">
+    <input type="submit" value="cancelar">
 
 </body>
 
